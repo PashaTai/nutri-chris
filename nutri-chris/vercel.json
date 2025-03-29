@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/image/(.*)", "dest": "/image/$1" },
+    { "src": "/(.*)", "dest": "/nutri-chris/index.html" }
+  ]
+}
