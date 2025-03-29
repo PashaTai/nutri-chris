@@ -298,14 +298,21 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
-        .program-image {
-            width: 100%;
-            height: 400px;
-            background-color: #e6f0ff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      .program-image {
+    width: 100%;
+    height: 400px;
+    background-color: #e6f0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevents image overflow */
+}
+        .program-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    object-position: center; /* Centers the image within the container */
+}
         
         .program-content {
             padding: 25px;
