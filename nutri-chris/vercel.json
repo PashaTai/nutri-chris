@@ -1,7 +1,8 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/image/(.*)", "dest": "/image/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "handle": "filesystem" },
+    { "src": "/image/(.*)", "dest": "/nutri-chris/image/$1" },
+    { "src": "/(.*)", "dest": "/nutri-chris/index.html" }
   ]
 }
